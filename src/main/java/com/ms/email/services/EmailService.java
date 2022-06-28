@@ -19,7 +19,7 @@ public class EmailService {
 	private EmailRepository emailRepository;
 
 	@Autowired
-	private JavaMailSender emailSender;
+	private  JavaMailSender emailSender;
 	
 	public EmailModel sendEmail(EmailModel emailModel) {
 		emailModel.setSendDateEmail(LocalDateTime.now());
